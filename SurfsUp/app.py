@@ -21,7 +21,7 @@ from flask import Flask, jsonify
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///hawaii.sqlite")
 
 Base = automap_base()
 Base.prepare(engine, reflect=True)
